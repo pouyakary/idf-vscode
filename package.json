@@ -1,0 +1,50 @@
+{
+	"name": "idf",
+	"displayName": "IDF Language Support",
+	"description": "Language Support for HeatStudio, OpenStudio and EneregyPlus files",
+	"version": "0.0.1",
+	"publisher": "karyfoundation",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"languages": [
+			{
+				"id": "heastudio",
+				"aliases": [ "HeatStudio" ],
+				"extensions": [ ".hstb", ".heatstudio" ]
+			},
+			{
+				"id": "energyplus",
+				"aliases": [ "EneregyPlus" ],
+				"extensions": [ ".idf" ]
+			},
+			{
+				"id": "openstudio",
+				"aliases": [ "OpenStudio" ],
+				"extensions": [ ".osm" ]
+			}
+		],
+		"grammars": [
+			{
+				"language": "heastudio",
+				"scopeName": "source.idf",
+				"path": "./syntaxes/idf.tmLanguage"
+			},
+			{
+				"language": "energyplus",
+				"scopeName": "source.idf",
+				"path": "./syntaxes/idf.tmLanguage"
+			},
+			{
+				"language": "openstudio",
+				"scopeName": "source.idf",
+				"path": "./syntaxes/idf.tmLanguage"
+			}
+		]
+	}
+}
