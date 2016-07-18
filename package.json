@@ -16,7 +16,7 @@
 			{
 				"id": "heastudio",
 				"aliases": [ "HeatStudio" ],
-				"extensions": [ ".hstb", ".heatstudio" ]
+				"extensions": [ ".hstb", ".19", ".heatstudio" ]
 			},
 			{
 				"id": "energyplus",
