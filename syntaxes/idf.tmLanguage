@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>19</string>
+		<string>openstudio</string>
+		<string>hstb</string>
+		<string>heatstudio</string>
+		<string>idf</string>
+	</array>
+	<key>name</key>
+	<string>IDF</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>!.*</string>
+			<key>name</key>
+			<string>comment.idf</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>([a-zA-Z]+\:)+[a-zA-Z]+</string>
+			<key>name</key>
+			<string>keyword.control.idf</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\{[a-zA-Z0-9\.\-]+\}</string>
+			<key>name</key>
+			<string>string.other.idf</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>,|;</string>
+			<key>name</key>
+			<string>variable.other.idf</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.idf</string>
+	<key>uuid</key>
+	<string>0b28e7bd-e291-4ad1-9364-df45b4f9baae</string>
+</dict>
+</plist>
