@@ -2,7 +2,7 @@
 	"name": "idf",
 	"displayName": "IDF Language Support",
 	"description": "Language Support for HeatStudio, OpenStudio and EneregyPlus files",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"publisher": "karyfoundation",
 	"engines": {
 		"vscode": "^0.10.1"
