@@ -1,6 +1,6 @@
 {
     "description":     "Language Support for HeatStudio, OpenStudio and EnergyPlus files",
-    "displayName":     "IDF Language Support",
+    "displayName":     "Kary IDF",
     "icon":            "icon.png",
     "main":            "./dist/extension.js",
     "name":            "idf",
@@ -78,6 +78,6 @@
         "publisherId":             "00c37c0d-e370-4cc2-8ab3-3fa32a26514a"
     },
     "dependencies": {
-        "idf-formatter":       "^1.1.2"
+        "idf-formatter":       "^1.1.3"
     }
 }
