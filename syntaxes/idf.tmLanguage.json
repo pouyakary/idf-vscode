@@ -1,73 +1,88 @@
 {
+    "name":            "IDF",
+    "scopeName":       "source.idf",
     "fileTypes": [
-        "idf", "19", "hstb", "osm", "heatstudio"
+        "idf",
+        "19",
+        "hstb",
+        "osm",
+        "heatstudio"
     ],
-    "name": "IDF",
     "patterns": [
         {
-            "include": "#comment"
-        }, {
-            "include": "#entry"
+            "include":     "#comment"
+        },
+        {
+            "include":     "#entry"
         }
     ],
     "repository": {
         "comment": {
-			"match": "(!\\-?)(.*)",
+            "match":       "(!\\-?)(.*)$",
             "captures": {
-                "1": { "name": "comment.sign.idf" },
-                "2": { "name": "comment.text.idf" }
+                "1": {
+                    "name":    "comment.sign.idf"
+                },
+                "2": {
+                    "name":    "comment.text.idf"
+                }
             }
         },
         "entry": {
-            "begin": "([^,;\\:]+)(?:(\\:)([^,;]+))*(,)",
+            "begin":       "([^,;\\:]+)(?:(\\:)([^,;]+))*(,)",
+            "end":         ";",
             "beginCaptures": {
                 "1": {
-					"name": "entity.name.type.head.idf"
-				},
+                    "name":    "entity.name.type.head.idf"
+                },
                 "2": {
-					"name": "punctuation.separator.idf"
-				},
+                    "name":    "punctuation.separator.idf"
+                },
                 "3": {
-					"name": "entity.name.type.query.idf"
-				},
+                    "name":    "entity.name.type.query.idf"
+                },
                 "4": {
-                    "name": "punctuation.separator.idf"
+                    "name":    "punctuation.separator.idf"
                 }
             },
-            "patterns": [{
-               "include": "#boolean"
-            }, {
-                "include": "#number"
-            }, {
-                "include": "#string"
-            }, {
-                "include": "#separator"
-            }, {
-                "include": "#comment"
-            }],
-            "end": ";",
+            "patterns": [
+                {
+                    "include":     "#boolean"
+                },
+                {
+                    "include":     "#number"
+                },
+                {
+                    "include":     "#string"
+                },
+                {
+                    "include":     "#separator"
+                },
+                {
+                    "include":     "#comment"
+                }
+            ],
             "endCaptures": {
                 "1": {
-					"name": "punctuation.terminator.idf"
-				}
+                    "name":    "punctuation.terminator.idf"
+                }
             }
         },
         "boolean": {
-            "match": "^\\s*((?:Yes)|(?:No))\\s*(?=,|;)",
-            "name": "constant.language.boolean.idf"
+            "match":       "^\\s*((?:Yes)|(?:No))\\s*(?=,|;)",
+            "name":        "constant.language.boolean.idf"
         },
         "number": {
-            "match": "^\\s*\\d+(?:\\.\\d+)?\\s*(?=,|;)",
-            "name": "constant.numeric.idf"
+            "match":       "^\\s*\\d+(?:\\.\\d+)?\\s*(?=,|;)",
+            "name":        "constant.numeric.idf"
         },
         "string": {
-            "match": "[^,;]+(?=,|;)",
-            "name": "string.idf"
+            "match":       "[^,;]+(?=,|;)",
+            "name":        "string.idf"
         },
         "separator": {
-            "match": ",|;",
-            "name": "punctuation.separator.idf"
+            "match":       ",|;",
+            "name":        "punctuation.separator.idf"
         }
-    },
-    "scopeName": "source.idf"
+    }
 }
