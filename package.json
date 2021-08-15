@@ -61,6 +61,10 @@
 			}
 		]
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pouyakary/idf-vscode.git"
+	},
 	"__metadata": {
 		"id": "0b2fe72b-6e7c-461b-9062-7652f7642ecb",
 		"publisherDisplayName": "Pouya Kary",
