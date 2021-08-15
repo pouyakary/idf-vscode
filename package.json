@@ -1,13 +1,13 @@
 {
-    "description": "Language Support for HeatStudio, OpenStudio and EnergyPlus files",
-    "displayName": "IDF Language Support",
-    "icon": "icon.png",
-    "main": "./dist/extension.js",
-    "name": "idf",
-    "publisher": "karyfoundation",
-    "version": "2.0.0",
+    "description":     "Language Support for HeatStudio, OpenStudio and EnergyPlus files",
+    "displayName":     "IDF Language Support",
+    "icon":            "icon.png",
+    "main":            "./dist/extension.js",
+    "name":            "idf",
+    "publisher":       "karyfoundation",
+    "version":         "3.0.0",
     "engines": {
-        "vscode": "^1.59.0"
+        "vscode":      "^1.59.0"
     },
     "categories": [
         "Programming Languages"
@@ -18,7 +18,7 @@
     "contributes": {
         "languages": [
             {
-                "id": "energyplus",
+                "id":      "energyplus",
                 "aliases": [
                     "EnergyPlus",
                     "OpenStudio",
@@ -35,49 +35,49 @@
         ],
         "grammars": [
             {
-                "language": "energyplus",
-                "path": "./syntaxes/idf.tmLanguage.json",
-                "scopeName": "source.idf"
+                "language":        "energyplus",
+                "path":            "./syntaxes/idf.tmLanguage.json",
+                "scopeName":       "source.idf"
             }
         ]
     },
     "scripts": {
-        "compile": "webpack",
-        "lint": "eslint src --ext ts",
-        "package": "webpack --mode production --devtool hidden-source-map",
-        "pretest": "npm run test-compile && npm run lint",
-        "test": "node ./out/test/runTest.js",
-        "test-compile": "tsc -p ./",
-        "test-watch": "tsc -watch -p ./",
-        "vscode:prepublish": "npm run package",
-        "watch": "webpack --watch"
+        "compile":                 "webpack",
+        "lint":                    "eslint src --ext ts",
+        "package":                 "webpack --mode production --devtool hidden-source-map",
+        "pretest":                 "npm run test-compile && npm run lint",
+        "test":                    "node ./out/test/runTest.js",
+        "test-compile":            "tsc -p ./",
+        "test-watch":              "tsc -watch -p ./",
+        "vscode:prepublish":       "npm run package",
+        "watch":                   "webpack --watch"
     },
     "devDependencies": {
-        "@types/glob": "^7.1.3",
-        "@types/mocha": "^8.2.2",
-        "@types/node": "14.x",
-        "@types/vscode": "^1.59.0",
-        "@typescript-eslint/eslint-plugin": "^4.26.0",
-        "@typescript-eslint/parser": "^4.26.0",
-        "eslint": "^7.27.0",
-        "glob": "^7.1.7",
-        "mocha": "^8.4.0",
-        "ts-loader": "^9.2.2",
-        "typescript": "^4.3.2",
-        "vscode-test": "^1.5.2",
-        "webpack": "^5.38.1",
-        "webpack-cli": "^4.7.0"
+        "@types/glob":                         "^7.1.3",
+        "@types/mocha":                        "^8.2.2",
+        "@types/node":                         "14.x",
+        "@types/vscode":                       "^1.59.0",
+        "@typescript-eslint/eslint-plugin":    "^4.26.0",
+        "@typescript-eslint/parser":           "^4.26.0",
+        "eslint":                              "^7.27.0",
+        "glob":                                "^7.1.7",
+        "mocha":                               "^8.4.0",
+        "ts-loader":                           "^9.2.2",
+        "typescript":                          "^4.3.2",
+        "vscode-test":                         "^1.5.2",
+        "webpack":                             "^5.38.1",
+        "webpack-cli":                         "^4.7.0"
     },
     "repository": {
-        "type": "git",
-        "url": "https://github.com/pouyakary/idf-vscode.git"
+        "type":    "git",
+        "url":     "https://github.com/pouyakary/idf-vscode.git"
     },
     "__metadata": {
-        "id": "0b2fe72b-6e7c-461b-9062-7652f7642ecb",
-        "publisherDisplayName": "Pouya Kary",
-        "publisherId": "00c37c0d-e370-4cc2-8ab3-3fa32a26514a"
+        "id":                      "0b2fe72b-6e7c-461b-9062-7652f7642ecb",
+        "publisherDisplayName":    "Pouya Kary",
+        "publisherId":             "00c37c0d-e370-4cc2-8ab3-3fa32a26514a"
     },
     "dependencies": {
-        "idf-formatter": "^1.1.2"
+        "idf-formatter":       "^1.1.2"
     }
 }
