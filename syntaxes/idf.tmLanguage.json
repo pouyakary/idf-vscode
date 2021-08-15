@@ -1,0 +1,67 @@
+{
+    "fileTypes": [
+        "idf", "19", "hstb", "osm", "heatstudio"
+    ],
+    "name": "IDF",
+    "patterns": [
+        {
+            "include": "#comment"
+        }, {
+            "include": "#entry"
+        }
+    ],
+    "repository": {
+        "comment": {
+			"match": "(!\\-?)(.*)",
+            "captures": {
+                "1": { "name": "comment.sign.idf" },
+                "2": { "name": "comment.text.idf" }
+            }
+        },
+        "entry": {
+            "begin": "([^,;]+)(,)",
+            "beginCaptures": {
+                "1": {
+					"name": "entity.name.type.idf"
+				},
+                "2": {
+                    "name": "punctuation.separator.idf"
+                }
+            },
+            "patterns": [{
+               "include": "#boolean"
+            }, {
+                "include": "#number"
+            }, {
+                "include": "#string"
+            }, {
+                "include": "#separator"
+            }, {
+                "include": "#comment"
+            }],
+            "end": ";",
+            "endCaptures": {
+                "1": {
+					"name": "punctuation.terminator.idf"
+				}
+            }
+        },
+        "boolean": {
+            "match": "^\\s*((?:Yes)|(?:No))\\s*(?=,|;)",
+            "name": "constant.language.boolean.idf"
+        },
+        "number": {
+            "match": "^\\s*\\d+(?:\\.\\d+)?\\s*(?=,|;)",
+            "name": "constant.numeric.idf"
+        },
+        "string": {
+            "match": "[^,;]+(?=,|;)",
+            "name": "string.idf"
+        },
+        "separator": {
+            "match": ",|;",
+            "name": "punctuation.separator.idf"
+        }
+    },
+    "scopeName": "source.idf"
+}

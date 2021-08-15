@@ -1,7 +1,7 @@
 {
 	"name": "idf",
 	"displayName": "IDF Language Support",
-	"description": "Language Support for HeatStudio, OpenStudio and EneregyPlus files",
+	"description": "Language Support for HeatStudio, OpenStudio and EnergyPlus files",
 	"version": "1.0.0",
 	"publisher": "karyfoundation",
 	"engines": {
@@ -15,36 +15,55 @@
 		"languages": [
 			{
 				"id": "heastudio",
-				"aliases": [ "HeatStudio" ],
-				"extensions": [ ".hstb", ".19", ".heatstudio" ]
+				"aliases": [
+					"HeatStudio"
+				],
+				"extensions": [
+					".hstb",
+					".19",
+					".heatstudio"
+				]
 			},
 			{
 				"id": "energyplus",
-				"aliases": [ "EneregyPlus" ],
-				"extensions": [ ".idf" ]
+				"aliases": [
+					"EneregyPlus"
+				],
+				"extensions": [
+					".idf"
+				]
 			},
 			{
 				"id": "openstudio",
-				"aliases": [ "OpenStudio" ],
-				"extensions": [ ".osm" ]
+				"aliases": [
+					"OpenStudio"
+				],
+				"extensions": [
+					".osm"
+				]
 			}
 		],
 		"grammars": [
 			{
 				"language": "heastudio",
 				"scopeName": "source.idf",
-				"path": "./syntaxes/idf.tmLanguage"
+				"path": "./syntaxes/idf.tmLanguage.json"
 			},
 			{
 				"language": "energyplus",
 				"scopeName": "source.idf",
-				"path": "./syntaxes/idf.tmLanguage"
+				"path": "./syntaxes/idf.tmLanguage.json"
 			},
 			{
 				"language": "openstudio",
 				"scopeName": "source.idf",
-				"path": "./syntaxes/idf.tmLanguage"
+				"path": "./syntaxes/idf.tmLanguage.json"
 			}
 		]
+	},
+	"__metadata": {
+		"id": "0b2fe72b-6e7c-461b-9062-7652f7642ecb",
+		"publisherDisplayName": "Pouya Kary",
+		"publisherId": "00c37c0d-e370-4cc2-8ab3-3fa32a26514a"
 	}
 }
