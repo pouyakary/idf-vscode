@@ -2,13 +2,13 @@
 	"name": "idf",
 	"displayName": "IDF Language Support",
 	"description": "Language Support for HeatStudio, OpenStudio and EnergyPlus files",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"publisher": "karyfoundation",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
 	"categories": [
-		"Languages"
+		"Programming Languages"
 	],
 	"icon": "icon.png",
 	"contributes": {

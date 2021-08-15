@@ -3,9 +3,6 @@ This package provides a language highlighting support for EnergyPlus _Input Data
 - HeatStudio Files (`.hstb`, `.19`)
 - OpenStudio Files (`.osm`)
 
-<img width="1072" alt="screen shot 2016-07-19 at 3 21 05 am" src="https://cloud.githubusercontent.com/assets/2157285/16933298/7c71ed2e-4d61-11e6-8c67-1b5722619c94.png">
+<br>
 
-<br />
-<a href="http://www.karyfoundation.org/">
-    <img src="http://www.karyfoundation.org/foundation/logo/github-full-horse.png" width="250"/>
-</a>
+![](https://user-images.githubusercontent.com/2157285/129464050-aa4cf663-b127-47c1-9d0b-43ba38109ac9.png)
