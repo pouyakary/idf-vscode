@@ -73,7 +73,7 @@
             "name":        "constant.language.boolean.idf"
         },
         "number": {
-            "match":       "^\\s*\\d+(?:\\.\\d+)?\\s*(?=,|;)",
+            "match":       "^\\s*-?\\d+(?:\\.\\d+)?\\s*(?=,|;)",
             "name":        "constant.numeric.idf"
         },
         "string": {
